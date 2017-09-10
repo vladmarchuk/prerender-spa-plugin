@@ -5,7 +5,7 @@
   <a href="https://www.npmjs.com/package/prerender-spa-plugin"><img src="https://img.shields.io/npm/l/prerender-spa-plugin.svg" alt="License"></a>
 </p>
 
-<h1 align="center">Prerender SPA Plugin</h1>
+<h1 align="center">Prerender SPA Plugin. Forked version with urlBasePath option added.</h1>
 
 <p align="center"><em>highly configurable, framework-agnostic static site generation for SPAs</em></p>
 
@@ -104,7 +104,7 @@ module.exports = {
 
         // Instead of loudly failing on JS errors (the default), ignore them.
         ignoreJSErrors: true,
-        
+
         // path of index file. By default it's index.html in static root.
         indexPath: path.resolve('/dist/path/to/index.html'),
 
@@ -129,13 +129,13 @@ module.exports = {
         phantomPageSettings: {
           loadImages: true
         },
-        
+
         // http://phantomjs.org/api/webpage/property/viewport-size.html
         phantomPageViewportSize: {
           width: 1280,
           height: 800
         },
-        
+
         // Manually transform the HTML for each page after prerendering,
         // for example to set the page title and metadata in edge cases
         // where you cannot handle this via your routing solution.
@@ -180,8 +180,8 @@ new HtmlWebpackPlugin({
 })
 ```
 
-### Tips 
- 
+### Tips
+
 If you have code that relies on the existence of `<body>` (and you almost certainly do), simply run it in a callback to the `DOMContentLoaded` event:
 
 ```js

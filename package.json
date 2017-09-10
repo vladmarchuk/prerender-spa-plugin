@@ -1,9 +1,9 @@
 {
-  "name": "prerender-spa-plugin",
-  "version": "2.0.1",
-  "description": "Prerenders static HTML in a single-page application.",
+  "name": "prerender-spa-plugin-baseurl",
+  "version": "0.0.1",
+  "description": "Prerenders static HTML in a single-page application. Modified version with urlBasePath option added.",
   "main": "index.js",
-  "author": "Chris Fritz",
+  "author": "Vlad Marchuk",
   "license": "MIT",
   "dependencies": {
     "core-js": "^2.4.1",
